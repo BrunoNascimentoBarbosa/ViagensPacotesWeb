@@ -33,3 +33,39 @@
     width: 250px;
 }
 
+.btn-cadastro {
+    background-color: #58C3FF;
+    width: 184px;
+    height: 34px;
+    color:white;
+    border-radius: 5px;
+     
+}
+
+               
+.titulo-cadastro{
+    font-size: 40px;
+    text-align: center;
+
+}
+
+.box-formulario{
+    width: 485px;
+    height: 493px;
+    margin-left: auto;
+    margin-right: auto;
+    
+     
+
+    border-radius: 10px;
+    background-color: black;
+     
+}
+
+.img-cadastro{
+    width: 1262px;
+    margin-top: -100px;
+    z-index: -1;
+    
+    
+}
