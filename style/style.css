@@ -61,9 +61,14 @@
 }
 
 .img-cadastro{
-    width: 1262px;
+    width: 1762px;
     margin-top: -100px;
     z-index: -1;
-    
+
+}
+.img-home{
+    width: 1762px;
+    margin-top: -100px;
+    z-index: -1;
     
 }
