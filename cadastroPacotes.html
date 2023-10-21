@@ -12,6 +12,7 @@ Curso Análise e Desenvolvimento de Sistemas -->
         <meta name="keywords" content="Destinos,Roteiros,Pacotes,Voos">
         <meta name="author" content="Renato Nogueira Nery - Rio de Janeiro ,Brasil 2023 ">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="estilo/bootstrap-3.4.1-dist/css/bootstrap.min.css">
         <link rel="stylesheet" href="estilo/justified-nav.css">
         <link rel="stylesheet" href="bootstrap-4.6.2-dist/css/bootstrap.min.css">
         <link rel="stylesheet" href="style/style.css">
@@ -45,79 +46,76 @@ Curso Análise e Desenvolvimento de Sistemas -->
 
                 <div class="box-formulario">
 
-                  <div class="content">
-                    <h1>Formulário Viagens🛫</h1>
-                    <form id="form">
-                        <div>
-                            <input type="text" placeholder="Digite seu nome" class="inputs required" >
-                            <span class="span-required">Nome deve ter no mínimo 3 caracteres</span>
-                        </div>
-                        <div>
-                            <input type="email" placeholder="Digite seu melhor email" class="inputs required" >
-                            <span class="span-required">Digite um email válido</span>
-                        </div>
-                    
-                        <div class="campo">
-                            <label for="senioridade"><strong>Selecione um país para visitar:</strong></label>
-                            <select id="senioridade" required>
-                              <option selected disabled value="">Selecione</option>
-                              <option>FRANÇA</option>
-                              <option>ESTADOS UNIDOS</option>
-                              <option>JAPÃO</option>
-                              <option>ITÁLIA</option>
-                            </select>
-                        </div>
-                        <div>
-                            <input type="password" placeholder="Escreva a cidade que deseja conhecer..." class="inputs required" >
-                            <span class="span-required">Senhas devem ser compatíveis</span>
-                        </div>
-                        <textarea class="inputs" name="descricao" id="descricao" cols="25" rows="10" placeholder="Fale um pouco sobro o motivo da viagem (Lembrando que são por motivos de segurança do cliente , nenhuma informação será compartilhada!)..."></textarea>
-                        <p>Quantidade de diárias:</p>
-                        <div class="box-select">
-                            <div>
-                                <input type="radio" id="m" value="m" name="sexo">
-                                <label for="m">1-3 Noites</label>
-                            </div>
-                            <div>
-                                <input type="radio" id="f" value="f" name="sexo">
-                                <label for="f">3-5 Noites</label>
-                            </div>
-                            <div>
-                                <input type="radio" id="o" value="o" name="sexo">
-                                <label for="o">5-7 Noites</label>
-                            </div>
-                            <div>
-                                <input type="radio" id="o" value="o" name="sexo">
-                                <label for="o">Quantidade personalizada</label>
-                            </div>
-                        </div>
-                        <p>Qual seu plano de viagem ?</p>
-                        <div class="box-select">
-                            <div>
-                                <input type="checkbox" id="html" value="html" name="experiencias">
-                                <label for="html">Único</label>
-                            </div>
-                            <div>
-                                <input type="checkbox" id="css" value="css" name="experiencias">
-                                <label for="css">Duplo</label>
-                            </div>
-                            <div>
-                                <input type="checkbox" id="js" value="js" name="experiencias">
-                                <label for="js">Grupo de amigos</label>
-                            </div>
-                            <div>
-                                <input type="checkbox" id="php" value="php" name="experiencias">
-                                <label for="php">Família</label>
-                            </div>
-                        </div>
-                        <button type="submit">CADASTRAR PACOTE</button>
+                  <div class="box-formulario">
+
+                    Aqui deve ser desenvolvido o formulário. 
+                    <!--Aqui deve ser desenvolvido o formulário.-->
+                    <form name="cadastrarpct" action="" method="">
+                     <!--Atributo action = chama código PHP e o atributo method definirá a forma como o conteúdo 
+                     do formulário será enviado : GET ou POST 
+                     estilizar o formulário no CSS-->
+         
+                     <label for="cidadedestino" id="est1">Cidade de Destino:</label>
+                     <input type="text" id="cidadedestino" name="cidadedestino" placeholder="Preenchimento obrigatório...">
+                     <br>
+                     <label for="paisdestino" id="est2">País de Destino:</label>
+                     <input type="text" id="paisdestino" name="paisdestino" placeholder="Preenchimento obrigatório...">
+                     <br>
+                     <label for="numpessoa" id="est3">Nº Pessoas:</label>
+                     <input type="number" id="numpessoa" name="numpessoa" placeholder="Preenchimento obrigatório...">
+                     <br>
+                     <label for="numpessoa" id="est4">Nº Noites:</label>
+                     <input type="number" id="numnoites" name="numnoites" placeholder="Preenchimento obrigatório...">
+                     <br>
+                     <label for="valor" id="est5">Valor:</label>
+                     <input type="text" name="valor" placeholder="Preenchimento obrigatório...">
+                     <br>
+                     <label for="arquivo" id="est6">Foto da Cidade:</label>
+                     <input type="file" name="arquivo">
+                     <br>
+                     <center><button>Cadastrar Pacote</button></center>
                     </form>
+                    <!--Formulário Criado , precisa de muitos acertos no CSS
+                   a tag <center> não poderá ser usada
+                   Formulário não está estilizado-->
+ 
+
                 </div>
 
 </div>
                 <hr>
 
-            
+            <!-- Rodapé do site-->
+                <div class="row container" >
+                    <div class="col">
+
+                        <strong>Tecnologias </strong>
+                        <p>Materia: Web: Html, CSS, JavaScrip, PHP e MySql.</p>
+                      
+                    </div>
+                    <div class="col">
+                        <strong>  Professor  </strong>
+                    </div>
+                    <div class="col">
+                       <strong> Alunos:</strong><br>
+                       <a>Alex Queiroz</a><br>
+                       <a>Bruno Nascimento</a> <br>
+                       <a>Caio Gomes</a> <br>
+                       <a>Daniel Costa</a> <br>
+                       <a>Gladson Alves</a> <br>
+                       <a>João Lennon</a> <br>
+                       <a>Renato Nogueira</a> <br>
+                       <a>Victor Eredia</a> <br>
+                         
+                    </div>
+                    <div class="col">
+                        <strong> Sobre o projeto.</strong>
+                      </div>
+                  </div>
+                </div>
+                <br>
+
+            <!-- Fim do Rodapé do site-->
 
 
              
