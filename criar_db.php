@@ -20,7 +20,7 @@
  $conexao = new mysqli($servidor_db,$usuario_db,$senha_db);
 
  if ($conexao->connect_error){
-    die("Conexão falhou: ". $conexao->coneect_error);
+    die("Conexão falhou: ". $conexao->connect_error);
  }
 
    echo "<div class='alert alert-info' role='alert'>  Conectado com sucesso no no Mysql.</div>";
