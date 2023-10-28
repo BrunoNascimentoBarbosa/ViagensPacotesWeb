@@ -47,7 +47,8 @@ $sql = "
         pais              VARCHAR(250) NOT NULL,  
         numero_pessoas    INT(6) NOT NULL, 
         numero_noites     INT(6) NOT NULL, 
-        valor_Pacote      INT(6) NOT NULL
+        valor_Pacote      INT(6) NOT NULL,
+        path_imagem       VARCHAR(250) NOT NULL
 
       )
 
