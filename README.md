@@ -31,10 +31,11 @@ Professor: Samuel Zanferdini Oliva
    Se tudo estive correto você vai receber uma mensagem informado que o banco foi configurado com sucesso.<br/>
    Você pode confirmar também a criação do seu banco acessando o PhPMyAdmin.
    Caso aconteça algum erro de conexão com seu banco, você deve modificar as credencias de acesso ao banco no aquivo criar_db.php<br/>
-   Por padrão  estamos essa configuração de acesso ao banco.
-   ` $servidor_db ="localhost";
-     $usuario_db="root";
-     $senha_db="";`
+   Por padrão  estamos usando essa configuração de acesso ao banco.
+   <br/>
+   ` $servidor_db ="localhost";<br/>
+     $usuario_db="root";<br/>
+     $senha_db="";`<br/>
 
    ![Alt text](img/image3.png)
 
