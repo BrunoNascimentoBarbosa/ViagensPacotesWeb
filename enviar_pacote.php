@@ -37,7 +37,7 @@ if(isset($_FILES['arquivo'])){
         $mysqli -> query ("INSERT INTO viagem_db.pacotes (cidade,pais,numero_pessoas,numero_noites,valor_Pacote,path_imagem	) 
                     VALUES('$cidade', '$pais', '$pessoas', '$noites','$valor','$path_imagem')" ) or die($mysqli->error);
 // Redirecionando para pagina home
-header("Location: index.html");
+header("Location: index.php");
 exit; // Certifique-se de sair após o redirecionamento
 
     } else
