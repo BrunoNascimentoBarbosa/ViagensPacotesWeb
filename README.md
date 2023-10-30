@@ -16,13 +16,13 @@ Professor:
    Veja a imagem abaixo.👇
 
 
-![Alt text](image.png)
+![Alt text](img/image.png)
 
 4) Depois de ativar o servidor Apache e Mysql. Rode o projeto.
    No seu navegador digite: http://localhost/ViagensPacotesWeb/
    Se tudo estive correto vai abriar essa página.
 
-   ![Alt text](image2.png)
+   ![Alt text](img/image2.png)
 
 
  
