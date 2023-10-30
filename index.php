@@ -22,7 +22,7 @@ Curso Análise e Desenvolvimento de Sistemas -->
     
     <body>  
             <nav class="navbar navbar-expand-lg navbar-light bg-light menu">
-                <a class="navbar-brand item-menu" href="index.html">VIAGENS</a>
+                <a class="navbar-brand item-menu" href="index.php">VIAGENS</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
@@ -34,7 +34,7 @@ Curso Análise e Desenvolvimento de Sistemas -->
                     </li>
                      </ul>
                      
-                     <button class="btn-cadastro"><a href="cadastroPacotes.html" >Cadastrar Pacotes</a></button>
+                     <button class="btn-menu"><a href="cadastroPacotes.html" >Cadastrar Pacotes</a></button>
                 </div>
                 </nav>
                 <div class="imagem">
