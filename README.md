@@ -33,9 +33,9 @@ Professor: Samuel Zanferdini Oliva
    Caso aconteça algum erro de conexão com seu banco, você deve modificar as credencias de acesso ao banco no aquivo criar_db.php<br/>
    Por padrão  estamos usando essa configuração de acesso ao banco.
    <br/>
-   ` $servidor_db ="localhost";<br/>
-     $usuario_db="root";<br/>
-     $senha_db="";`<br/>
+   ` $servidor_db ="localhost"; 
+     $usuario_db="root"; 
+     $senha_db="";` 
 
    ![Alt text](img/image3.png)
 
