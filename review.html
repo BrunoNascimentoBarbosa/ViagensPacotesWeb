@@ -1,61 +1,75 @@
 <!DOCTYPE html>
 <html lang="pt">
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="estilo/bootstrap-3.4.1-dist/css/bootstrap.min.css">
-        
-        <link rel="stylesheet" href="estilo/justified-nav.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-        <script src="estilo/bootstrap-3.4.1-dist/js/bootstrap.min.js"></script>
-    
+          <!--Cabeçalho inicial iniciando Framework Bootstrap-->
+          <title>Viaje.com</title>
+          <meta charset="UTF-8"/>
+          <meta name="viewport" content="width=device-width"/> 
+          <meta name="description" content="Página Agencia de Viagem">
+          <meta name="keywords" content="Destinos,Roteiros,Pacotes,Voos">
+          <meta name="author" content="Renato Nogueira Nery - Rio de Janeiro ,Brasil 2023 ">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <link rel="stylesheet" href="estilo/bootstrap-3.4.1-dist/css/bootstrap.min.css">
+          <link rel="stylesheet" href="estilo/justified-nav.css">
+          <link rel="stylesheet" href="bootstrap-4.6.2-dist/css/bootstrap.min.css">
+          <link rel="stylesheet" type="text/css"   href="style/style.css" media="screen"/>
+
+
+        <style>
+          .carrossel{
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+          }
+          .descricao{
+            color: black;
+            font-size:large;
+          }
+          .divs{
+            border-radius: 5px;
+            background-color: #58C3FF;
+          }
+  </style>
+    </head>
+
+
     <body>  
             
-              <style>
-                .carrossel{
-                  font-family: Arial, Helvetica, sans-serif;
-                  text-align: center;
-                }
-                .descricao{
-                  color: black;
-                  font-size:large;
-                }
-                .divs{
-                  border-radius: 5px;
-                  background-color: #58C3FF;
-                }
-        </style>
+             
+      <nav class="navbar navbar-expand-lg navbar-light bg-light menu">
+        <a class="navbar-brand item-menu" href="index.php">VIAGENS</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link item-menu" href="review.html">SOBRE</a>
+            </li>
+             </ul>
+             
+             <button class="btn-menu"><a href="cadastroPacotes.html" >Cadastrar Pacotes</a></button>
+        </div>
+        </nav>
 
-        <div class="carrossel">
-        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-            
+        <div class="jumbotron">
+          <h1 class="display-4">Projeto de Desenvolvimento Web </h1>
+           <p class="descricao">UNIVERSIDADE ESTÁCIO<br>Professor: Samuel Zanferdini Oliva<br>Analise e Desenvolvimento de Sistemas / Sistemas de Informação - 2º Período 2023</p> 
+          <p class="">Tecnologias utilizadas <br>&darr;<br>HTML<br>CSS<br>JavaScript<br>PHP<br>Frameworks<br>Bootstrap<br>Jquery</p>
+          <hr class="my-4">
+          <p class="descricao">Alunos que contribuíram com este projeto:<br>202302296521 - Alex R M Queiroz - alexrmqueiroz@gmail.com<br>202302290299 - Bruno do Nascimento - bruno@brunonascimento.com<br>202302295631 - Caio Felipe Rocha Gomes - caiofeliperochagomes@gmail.com<br>202303275994 - Daniel Santana Costa - danielsantanacosta555@gmail.com<br>202302290401 - Gladson Giancaterino Alves Nascimento - 202302290401@alunos.estacio.br<br>202302296297 - João Lennon - joaolennonalveslima@gmail.com<br>202303742789 - Renato Nogueira Nery - 202303742789@alunos.estacio.br<br></p><br> 
+        </p>
+          <a class="btn btn-primary btn-lg" href="https://github.com/BrunoNascimentoBarbosa/ViagensPacotesWeb" target="_blank" role="button">Visite o projeto no GitHub</a>
+        </div>
+ 
           
-            <!-- Wrapper for slides -->
-            <div class="carousel-inner" role="listbox">
-              <div class="item active">
-                
-                <div class="carousel-caption">
-                  <div class="divs">
-                  <p class="descricao">Projeto de Desenvolvimento Web - Tecnologias utilizadas <br>&darr;<br>HTML<br>CSS<br>JavaScript<br>PHP<br>Frameworks<br>Bootstrap<br>Jquery</p><br></div>
-                </div>
-              </div>
-              <div class="item">
-                
-                <div class="carousel-caption">
+          
+                 
                   <div class="divs"><br>
-                    <p class="descricao">UNIVERSIDADE ESTÁCIO<br>Professor: Samuel Zanferdini Oliva<br>Analise e Desenvolvimento de Sistemas / Sistemas de Informação - 2º Período 2023</p><br></div>
+                    
                 
                 </div>
-                
-              </div>
-              <div class="item">
-                
-                <div class="carousel-caption">
-                  <div class="divs">
-                  <br><p class="descricao">Alunos que contribuíram com este projeto:<br>202302296521 - Alex R M Queiroz - alexrmqueiroz@gmail.com<br>202302290299 - Bruno do Nascimento - bruno@brunonascimento.com<br>202302295631 - Caio Felipe Rocha Gomes - caiofeliperochagomes@gmail.com<br>202303275994 - Daniel Santana Costa - danielsantanacosta555@gmail.com<br>202302290401 - Gladson Giancaterino Alves Nascimento - 202302290401@alunos.estacio.br<br>202302296297 - João Lennon - joaolennonalveslima@gmail.com<br>202303742789 - Renato Nogueira Nery - 202303742789@alunos.estacio.br<br></p><br></div>
-                </div>
-            </div>
-          </div>
-    </div>
+               
+     
 </body>
 </html>

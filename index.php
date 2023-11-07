@@ -21,6 +21,8 @@ Curso Análise e Desenvolvimento de Sistemas -->
     </head>
     
     <body>  
+
+    
             <nav class="navbar navbar-expand-lg navbar-light bg-light menu">
                 <a class="navbar-brand item-menu" href="index.php">VIAGENS</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -37,13 +39,14 @@ Curso Análise e Desenvolvimento de Sistemas -->
                      <button class="btn-menu"><a href="cadastroPacotes.html" >Cadastrar Pacotes</a></button>
                 </div>
                 </nav>
-                <div class="imagem">
-                <img src="img/capa-viagens.jpg" alt="imagem capa viagem" class="img-home">
+
+                <div class="">
+                <img src="img/capa-viagens.jpg" alt="imagem capa viagem" class="imagem-Home">
                 </div>
 
                 <h1 class="lead">Escolha o seu próximo destino.</h1>
 
-
+ 
                 
                   <div class='container'>
                      <div class="row">

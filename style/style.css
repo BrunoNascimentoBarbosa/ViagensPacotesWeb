@@ -81,12 +81,7 @@
     z-index: -1;
 
 }
-.img-home{
-    width: 1762px;
-    margin-top: -100px;
-    z-index: -1;
-    
-}
+
 
 #cidadedestino{
    background: #FFF;
@@ -108,3 +103,9 @@ input {
     
 }
 
+.imagem-Home { 
+     
+    width: 100%;
+    z-index: -1;
+    
+}
