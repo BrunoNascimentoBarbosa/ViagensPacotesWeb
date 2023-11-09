@@ -13,12 +13,30 @@ Curso Análise e Desenvolvimento de Sistemas -->
         <meta name="description" content="Página Agencia de Viagem">
         <meta name="keywords" content="Destinos,Roteiros,Pacotes,Voos">
         <meta name="author" content="Renato Nogueira Nery - Rio de Janeiro ,Brasil 2023 ">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="estilo/bootstrap-3.4.1-dist/css/bootstrap.min.css">
-        <link rel="stylesheet" href="estilo/justified-nav.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">     
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
         <link rel="stylesheet" href="bootstrap-4.6.2-dist/css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css"   href="style/style.css" media="screen"/>
     </head>
+
+    <script>
+         $(function(){
+           $('button#deletar').click(function(){
+             var id_pacote = $(this).val();
+               $.post(
+                 'deletar_pacote.php',
+                   {
+                     action : "deletar",
+                     id_pacote: id_pacote
+                   },
+                    function(res){
+                   location.reload();
+                   }
+                 )
+             })
+        })
+
+    </script>
     
     <body>  
 
@@ -77,7 +95,12 @@ Curso Análise e Desenvolvimento de Sistemas -->
                 </div>
                 <p class='titulo-pacote'>$pacote[numero_pessoas] &nbsp; Pessoas </p><br>
                 <div id='valor'><p class='titulo-pacote'>Valor:<br> R$ $pacote[valor_Pacote]</p></div>
-                <p class='titulo-pacote'><a href='#'> Comprar</a></p>
+              
+                 
+                <button type='button' id='editar' class='btn btn-primary' value='" .$pacote['id'] ."'>Editar</button> 
+
+                <button type='button'   id='deletar' class='btn btn-danger' value='" .$pacote['id'] ."'>Deletar</button> 
+                
                 </div>
                 </div>
             
@@ -108,9 +131,8 @@ else {
                         <br>
                       
 
-              
                
- 
+     
                 <script src="bootstrap-4.6.2-dist/js/bootstrap.min.js"></script>
                 <script src="bootstrap-4.6.2-dist/js/bootstrap.js"></script>
      </body>
