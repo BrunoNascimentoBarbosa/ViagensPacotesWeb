@@ -15,7 +15,11 @@ Curso Análise e Desenvolvimento de Sistemas -->
         <meta name="author" content="Renato Nogueira Nery - Rio de Janeiro ,Brasil 2023 ">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">     
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="bootstrap-4.6.2-dist\js\bootstrap.min.js"></script>    
         <link rel="stylesheet" href="bootstrap-4.6.2-dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="bootstrap-4.6.2-dist/css/bootstrap.min.css">
+
+        <!--Nosso próprio arquivo CSS-->
         <link rel="stylesheet" type="text/css"   href="style/style.css" media="screen"/>
     </head>
 
@@ -35,6 +39,52 @@ Curso Análise e Desenvolvimento de Sistemas -->
                  )
              })
         })
+
+        $(function(){
+        $('button#editar').click(function(){
+          var id = $(this).val();
+          $.post( 
+            'buscar_pacote.php',
+            {
+              action: 'buscar',
+              id_pacote: id
+          },
+            function(res){
+               //O console log foi adicionado para debugar o código.
+              //console.log(res);
+              $('.modal-body').html(res);
+            }
+          );
+        });
+        $('#atualizar_pacote').click(function(){
+          var cidade = $('cidadedestino').val();
+          var pais = $('paisdestino').val();
+          var numero_pessoas = $('numero_pessoa').val();
+          var numero_noites = $('numero_noites').val();
+          var valor_Pacote = $('valor_Pacote').val();
+          var path_imagem = $('path_imagem').val();
+          var id =  $('#atualizar_pacote').val();
+          $.post(
+            'editar_pacote.php',
+            {
+              action: 'editar',
+              id_pacote : id,
+              cidade : cidade,
+              pais : pais,
+              numero_pessoas : numero_pessoas,
+              numero_noites : numero_noites,
+              valor_Pacote : valor_Pacote,
+              path_imagem : path_imagem
+            },
+            function(res){
+              console.log(res);
+              //location.reload();
+            }
+          );
+
+        });
+
+      });
 
     </script>
     
@@ -97,9 +147,9 @@ Curso Análise e Desenvolvimento de Sistemas -->
                 <div id='valor'><p class='titulo-pacote'>Valor:<br> R$ $pacote[valor_Pacote]</p></div>
               
                  
-                <button type='button' id='editar' class='btn btn-primary' value='" .$pacote['id'] ."'>Editar</button> 
+                <button type='button' id='editar' class='btn btn-primary'  data-toggle='modal' data-target='#myModal' value='" .$pacote['id'] ."'>Editar</button> 
 
-                <button type='button'   id='deletar' class='btn btn-danger' value='" .$pacote['id'] ."'>Deletar</button> 
+                <button type='button'  id='deletar' class='btn btn-danger' value='" .$pacote['id'] ."'>Deletar</button> 
                 
                 </div>
                 </div>
@@ -123,12 +173,36 @@ else {
 
 ?>
               
-                          </div>
-                          </div>
-                          </div>
+             </div>
+        </div>
+   </div>
                           
-                        <br>
-                        <br>
+<br>
+<br>
+
+
+<!-- MOdal para editar pacote-->
+<div class="modal" tabindex="-1" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Editar pacotes</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+         
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+        <button type="button" id="atualizar_pacote" class="btn btn-primary">Salvar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- FIM MOdal para editar pacote-->
+
+
+
                       
 
                

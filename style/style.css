@@ -109,3 +109,8 @@ input {
     z-index: -1;
     
 }
+
+
+.img-modal {
+    display: none;
+}
