@@ -57,13 +57,13 @@ Curso Análise e Desenvolvimento de Sistemas -->
           );
         });
         $('#atualizar_pacote').click(function(){
-          var cidade = $('cidadedestino').val();
-          var pais = $('paisdestino').val();
-          var numero_pessoas = $('numero_pessoa').val();
-          var numero_noites = $('numero_noites').val();
-          var valor_Pacote = $('valor_Pacote').val();
-          var path_imagem = $('path_imagem').val();
-          var id =  $('#atualizar_pacote').val();
+          var cidade = $('#cidadedestino2').val();
+          var pais = $('#paisdestino2').val();
+          var numero_pessoas = $('#numero_pessoa2').val();
+          var numero_noites = $('#numero_noites2').val();
+          var valor_Pacote = $('#valor_Pacote2').val();
+          var path_imagem = $('#path_imagem2').val();
+          var id =  $('#id_pacote2').val();
           $.post(
             'editar_pacote.php',
             {
@@ -78,7 +78,7 @@ Curso Análise e Desenvolvimento de Sistemas -->
             },
             function(res){
               console.log(res);
-              //location.reload();
+               location.reload();
             }
           );
 
