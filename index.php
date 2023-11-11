@@ -78,7 +78,7 @@ Curso Análise e Desenvolvimento de Sistemas -->
             },
             function(res){
               console.log(res);
-               location.reload();
+               //location.reload();
             }
           );
 

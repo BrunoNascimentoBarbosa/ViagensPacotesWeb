@@ -49,11 +49,10 @@ if ($res = mysqli_query($conn, $sql)){
             <br>
             <label for='valor_Pacote' id='est5'>Imagem atual.</label>
            
-            <img name='path_imagem' style='width:400px; border-radius:5px;' id='path_imagem2'  src='".$row['path_imagem']. "'> 
+            <img name='path_imagem' style='width:400px; border-radius:5px;'  src='".$row['path_imagem']. "'> 
             <br>
             <br>
-            <input name='arquivo' type='file'   >
-            <p style='color: blue'>Envie uma imagem .PNG ou .JPG, com até 2Mb.</p>
+            <input hidden=hidden id='path_imagem2' type='text' value='".$row['path_imagem']. "'/>
            
             <br>
 
